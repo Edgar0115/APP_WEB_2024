@@ -1,0 +1,5 @@
+html: (hipertext markup language) es el lenguaje
+estándar utilizado para crear y estructurar páginas web.
+No es un lenguaje de programación, sino un lenguaje de 
+marcado, lo que significa que su principal función es 
+organizar y definir etiquetas
