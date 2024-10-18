@@ -1,0 +1,108 @@
+/* Estilos aplicados para crear el menú horizontal en CSS */
+
+#index {
+    background-color: silver;
+    padding: 2rem;
+    margin: 0;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 6vmin;
+}
+
+header {
+    width: 100%;
+    background-color: cadetblue;
+    position: sticky;
+    top: 0;
+}
+
+#btn-menu {
+    display: none;
+}
+
+header label {
+    display: none;
+    width: 2rem;
+    height: 2rem;
+    padding: 10px;
+    border-right: 1px solid #fff;
+}
+
+header label:hover {
+    cursor: pointer;
+}
+
+#menu {
+    display: flex;
+    background-color: cadetblue;
+}
+
+#menu ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    width: 100%; /* Asegura que el menú ocupe todo el ancho */
+}
+
+#menu li {
+    flex-grow: 1;
+    text-align: center;
+    border: 1px solid white;
+}
+
+#menu li a {
+    text-decoration: none;
+    display: block;
+    padding: 1rem 1.5rem;
+    color: white;
+}
+
+#menu ul li:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#menu ul li:active {
+    background-color: rgba(0, 0, 0, .5);
+}
+
+/* Aplicar estilos con media query para que el menú se oculte y sea desplegable */
+
+@media screen and (max-width: 768px) {
+    header label {
+        display: block;
+    }
+
+    #menu {
+        display: none;
+        position: absolute;
+        background-color: cadetblue;
+        width: 100%; /* Cambia a 100% para que ocupe toda la página */
+        left: 0; /* Asegura que se alinee al lado izquierdo */
+        top: 60px; /* Ajusta según la altura de tu encabezado */
+        transition: all 0.5s ease;
+        z-index: 10; /* Asegura que esté por encima de otros elementos */
+    }
+
+    #menu ul {
+        flex-direction: column;
+    }
+
+    #menu li {
+        text-align: left;
+        border: 1px solid white;
+    }
+
+    main {
+        padding: 1rem;
+    }
+
+    main p {
+        margin: 2rem;
+    }
+}
+
+#btn-menu:checked ~ #menu {
+    display: block; /* Mostrar el menú cuando el checkbox está marcado */
+}

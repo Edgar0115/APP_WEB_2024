@@ -1,0 +1,79 @@
+/* Estilos del main, section y footer */
+
+/* Reset de márgenes y padding */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    margin: 10px;
+    padding: 50px;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-style: italic;
+    text-decoration: underline;
+    background-color: burlywood;
+    padding: 3rem; /* Corregido de 3rm a 3rem */
+}
+
+section p {
+    text-align: justify;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+section img {
+    display: block;
+    width: 32rem;
+    height: 25rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90%;
+}
+
+section a img {
+    width: 2rem;
+    height: 2rem;
+    display: block;
+    margin-left: 5%;
+}
+
+footer {
+    background-color: silver;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+footer a {
+    padding: 1rem;
+    background-color: cadetblue;
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    background-color: rgba(35, 216, 35, 0.432); /* Corregido el espacio antes de :hover */
+}
+
+footer a:active {
+    background-color: red; /* Corregido el espacio antes de :active */
+}
+
+body {
+    display: flex;
+    flex-direction: column; /* Apilar elementos verticalmente */
+    align-items: center; /* Centrar horizontalmente */
+    justify-content: flex-start; /* Alinear al inicio, ajustar según sea necesario */
+    min-height: 100vh; /* Asegurar que ocupe la altura completa */
+    margin: 0; /* Eliminar márgenes por defecto */
+}
+
+header, main, footer {
+    width: 80%; /* Ancho del contenido, puedes ajustarlo */
+    text-align: center; /* Centrar texto dentro de cada sección */
+}

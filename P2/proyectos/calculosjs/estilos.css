@@ -4,10 +4,11 @@ padding: 0;
 }
 
 body{
-    background-image: url('imagen/pexels-jan-van-bizar-92378004-12266858.jpg');
-    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('imagen/agua.jpg');
     background-size: cover; /* Asegura que la imagen cubra toda el área */
-    height: 100vmax; /* Hace que el body tenga al menos la altura de la ventana */
+    background-repeat: no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+    /*height: 100vmax;  Hace que el body tenga al menos la altura de la ventana */
 }
 
 
@@ -25,19 +26,47 @@ h2{
     font-size: 4vw ;
     font-weight: normal;
     font-style: italic;
+    background-color: rgba(105, 105, 105, 0.637);
 }
 
 form{
     text-align: center;
     color: white;
+    
+    margin-top: 2vw;
+    margin-bottom: 2vw;
 }
 
 label{
     font-size: 2vw;
 }
 
-.caja1{
+.caja1 #tipo{
     font-size: 1.5vw;
     font-weight: bold;
-    
+    width: auto;
+    color: black;
+}
+
+hr{
+    color: white;
+}
+
+#btn{
+    margin-top: 2vw;
+    padding: 2vw;
+    border-radius: 10px;
+    background-color: blue;
+    font-size: 2vw;
+    color: white;
+    font-weight: bold;
+
+}
+#btn:hover{
+    background-color: black;
+}
+
+#btn:active{
+    background-color: green;
+    color: black;
 }

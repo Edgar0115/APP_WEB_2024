@@ -31,6 +31,7 @@ function operacion() {
         resul.innerHTML = `<h2>${n1} ${tipoope} ${n2} = ${ope}</h2>`;
     } else {
         resul.innerHTML = `<h2>Ingrese solo números...</h2>`;
+        alert('Ingrese solo números')
     }
 }
 
